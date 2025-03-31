@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6328027167754619504}
   - component: {fileID: 2992940781709466347}
   - component: {fileID: 6602637007710767298}
+  - component: {fileID: 5465267231978675869}
   m_Layer: 0
   m_Name: BombTower
   m_TagString: Untagged
@@ -100,6 +101,9 @@ MonoBehaviour:
   characterName: Bomb Tower
   health: 100
   displayHealth: {fileID: 6328027167770687182}
+  projectile: {fileID: 8588117232600689937, guid: e1969f8a6726d874b91072bc90545de5, type: 3}
+  spawnTimer: 0
+  spawnInterval: 1
 --- !u!50 &6602637007710767298
 Rigidbody2D:
   serializedVersion: 4
@@ -121,6 +125,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &5465267231978675869
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6328027167754619505}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &6328027167770687180
 GameObject:
   m_ObjectHideFlags: 0
